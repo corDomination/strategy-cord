@@ -1,6 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7f3wknatk7c3"]
+[gd_scene load_steps=4 format=3 uid="uid://c7f3wknatk7c3"]
 
 [ext_resource type="Texture2D" uid="uid://csikn8215ynlv" path="res://sprites/dark-cell.png" id="1_d2em3"]
+[ext_resource type="Script" path="res://scripts/cell.gd" id="2_fd3kp"]
 
-[node name="Block" type="Sprite2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwfva"]
+size = Vector2(32, 32)
+
+[node name="Cell" type="Sprite2D"]
+position = Vector2(16, 16)
 texture = ExtResource("1_d2em3")
+script = ExtResource("2_fd3kp")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_iwfva")

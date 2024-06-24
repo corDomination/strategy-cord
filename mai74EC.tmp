@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dni47hhgd86oj"]
 
 [ext_resource type="Texture2D" uid="uid://c303drkfhner2" path="res://sprites/block.png" id="1_c0s1w"]
-[ext_resource type="Script" path="res://Board.gd" id="2_irr67"]
+[ext_resource type="Script" path="res://scripts/Board.gd" id="2_irr67"]
 
 [node name="Block" type="Sprite2D"]
 position = Vector2(32, 32)
